@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Great joseph">
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Great Onyemaechi(jnr) joseph. projectentrypage">
-    <title>WDD 131 – Dynamic Web Fundamentals – Great joseph</title>
+    <meta name="author" content="Great Joseph">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Great Onyemaechi (Jnr) Joseph personal webpage.">
+    <title>WDD 131 – Dynamic Web Fundamentals – Great Joseph</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="/scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://linkedin.com">LinkedIn</a>
-            <a href="https://byupw.instructure.com">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
 
     <main>
-        <h1>Great joseph</h1>
+        <h1>Great Joseph</h1>
+
         <section class="card">
-            <h2>About me</h2>
-            <img src="" alt="">
-            <p></p>
+            <h2>About Me</h2>
+            <img src="images/profile.webp" alt="Photo of Great Joseph" class="profile-img">
+            <p>My name is <strong>Great Onyemaechi (Jnr) Joseph</strong>. I was born and raised in Nigeria and currently live in Edo State. I am studying Web Development and enjoy learning new technologies that can help improve lives and create better online experiences.</p>
+            <p>In my free time, I enjoy exploring new ideas, listening to music, and connecting with people who share my passion for technology and creativity. I believe in lifelong learning and love turning ideas into real projects that make a difference.</p>
         </section>
+
         <section class="card">
-            <h2>Web dev resources</h2>
-            <img src="" alt="">
-            <p></p>
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Great joseph Edo, Nigeria</p>
-        <p id="lastModified">last modified:</p>
+        <p>&copy; <span id="currentyear"></span> Great Joseph. Edo, Nigeria</p>
+        <p id="lastModified">Last modified: <span id="modDate"></span></p>
     </footer>
-    
 </body>
 </html>

@@ -1,0 +1,134 @@
+/* ===== General Styles ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #003566;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffd60a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffc300;
+}
+
+/* ===== Main ===== */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    grid-column: 1/4;;
+    text-align: center;
+    color: #003566;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Cards ===== */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-top: 5px solid #0077b6;
+}
+
+.card h2 {
+    color: #003566;
+    border-bottom: 2px solid #90e0ef;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.profile-img {
+    width: 150px;
+    float: right;
+    margin-left: 1rem;
+    border-radius: 8px;
+    border: 2px solid #0077b6;
+}
+
+/* ===== Web Dev Resources ===== */
+.card ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.card ul li {
+    margin: 0.6rem 0;
+}
+
+.card ul a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 800;
+}
+
+.card ul a:hover {
+    text-decoration: underline;
+    color: #0096c7;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #003566;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer span {
+    color: #ffd60a;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .profile-img {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+}
