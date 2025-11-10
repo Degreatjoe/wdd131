@@ -1,0 +1,77 @@
+@media screen and (min-width: 801px) {
+
+    *{
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+  /* Hide toggle icons */
+  .toggle-menu {
+    display: none;
+  }
+
+  /* Desktop layout for header and nav */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003566;
+    color: white;
+    padding: 1.5rem;
+    font-size: larger;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    position: static;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+  }
+
+  nav a:hover {
+    background-color: #0460b5;
+  }
+
+/* ===== main ===== */
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+
+  main h1{
+    grid-column: 1/4;
+    padding: 20px;
+  }
+  figure{
+    padding: 4px;
+  }
+
+  figure img{
+    min-width: 70px;
+    max-width: 200px;
+  }
+
+    /* ===== Footer ===== */
+    footer {
+        background-color: #003566;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    footer span {
+        color: #ffd60a;
+    }
+}
