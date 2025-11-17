@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China</title>
+    <meta name="author" content="Great O Great">
+    <meta name="description" content="a country i would love to visit - China | Great Joseph | wdd131">
+    <meta name="keywords" content="China, favourite country, Great Joseph, Great, Joseph">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>China</h1>
+</header>
+
+<main>
+
+    <!-- HERO IMAGE -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/china_large.webp" media="(min-width: 700px)">
+            <img src="images/china_small.webp " alt="A view of China">
+        </picture>
+    </section>
+
+    <!-- MOBILE DATA SECTION -->
+    <section class="data">
+        <h2>Data</h2>
+        <ul>
+            <li><strong>Area:</strong> 3,700,000 sq mi</li>
+            <li><strong>Population:</strong> 1,400,000,000 (1.4b)</li>
+            <li><strong>Capital:</strong> Beijin</li>
+            <li><strong>most populous city:</strong> Shangai</li>
+            <li><strong>Largest financial Centre:</strong> Shangai</li>
+            <li><strong>Currency:</strong> Chinese Yuan (CNY)</li>
+            <li><strong>Language:</strong> Mandarine Chinese</li>
+            <li><strong>TimeZone:</strong> UTC+8 (CST)</li>
+            <li><strong>Country calling code:</strong> +86</li>
+            <li><span>Region:</span> East Asia</li>
+        </ul>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <img class="weather-icon-mobile" src="images/weather.svg" alt="weather icon">
+
+        <ul>
+            <li><span>Temperature:</span> <span id="temp">30&deg;C</span></li>
+            <li><span>Wind Speed:</span> <span id="speed" >12km/h</span></li>
+            <li><span>Wind Chill:</span> <span id="windchill">--</span></li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> | Great O. Joseph | Benin city, Nigeria</p>
+    <p>Last modified: <span id="modified"></span></p>
+</footer>
+
+</body>
+</html>

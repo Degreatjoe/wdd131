@@ -1,0 +1,115 @@
+/* ---------------- GLOBAL ---------------- */
+:root {
+    --bg: #f5f5f5;
+    --primary: #740a0f;      /* themed color */
+    --accent: #FFFF00;
+    --text: #222;
+    --card-bg: #ccc;
+    --border: #ccc;
+    --shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    margin: 0 24px;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+header {
+    text-align: center;
+    background: var(--primary);
+    color: var(--accent);
+    padding: 1rem;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+    background-color: var(--accent);
+    padding: 12px;
+}
+
+/* ---------------- HERO ---------------- */
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+/* ---------------- CARD SECTIONS ---------------- */
+.data, .weather {
+    background: var(--card-bg);
+    padding: 1rem;
+    width: 85%;
+    margin: 1rem auto;
+    box-shadow: var(--shadow);
+}
+
+.data ul, .weather ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data li, .weather li {
+    display: flex;
+    justify-content: space-between;
+    padding: .25rem 0;
+}
+
+/* MOBILE weather icon (SVG) */
+.weather-icon-mobile {
+    display: block;
+    width: 40px;
+    margin: 0 auto .5rem;
+}
+
+/* ---------------- DESKTOP STYLES ---------------- */
+@media (min-width: 700px) {
+
+    main {
+        height: max-content;        
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        width: 30%;
+        align-self: flex-start;
+        left: 50px;
+    }
+
+    .weather {
+        position: absolute;
+        width: 20%;
+        align-self: flex-end;
+        bottom: 12px;
+        right: 50px;
+    }
+
+    /* Hide SVG on desktop */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    /* REQUIRED PSEUDO-ELEMENT — weather icon ⛅ */
+    .weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: var(--primary);
+    color: var(--accent);
+    font-weight: bold;
+}
