@@ -1,0 +1,40 @@
+/* Large screen styles */
+@media (min-width: 700px) {
+  /* Header nav becomes horizontal */
+  nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+    padding: 0;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  /* Hide mobile menu buttons */
+  .toggle-menu {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  /* Grid with multiple columns */
+  .temple-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .temple-cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

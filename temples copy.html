@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Great O. Joseph">
+    <meta name="description" content="temples galery | wdd130 | Great Joseph">
+    <meta name="keywords" content="lds temples, temples, church of jesus christ, gallery">
+    <title>Temples Gallery</title>
+    <!-- Google Fonts Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <script src="scripts/filtered-temple.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>Temple Album</div>
+
+        <span class="toggle-menu" id="toggle-menu-on">  ☰ </span>
+
+        <nav>
+            <span class="toggle-menu" id="toggle-menu-off">❌</span>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="templeCards" class="temple-cards"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Great Joseph. Edo, Nigeria</p>
+        <p id="lastModified">Last modified: <span id="modDate"></span></p>
+    </footer>
+</body>
+</html>
