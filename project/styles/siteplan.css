@@ -1,0 +1,85 @@
+/* --- Final High-Contrast Color Variables (WCAG AAA Focus) --- */
+:root {
+    --background-color: #FFFFFF; /* Crisp White */
+    --text-color: #363636;       /* Charcoal Black (Text and Borders) */
+    --accent-color-bg: #134d13;  /* Deep Forest Green (Headings/Accents BG) */
+    --accent-color-text: #FFFFFF;/* Pure White (Text on Green BG) */
+}
+
+/* --- Typography Styles --- */
+body {
+    font-family: 'Roboto', sans-serif; /* Body Text */
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; /* Headings */
+    color: var(--accent-color-bg); /* Headings use the deep green */
+    border-bottom: 2px solid var(--text-color); 
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 4px double var(--text-color);
+    padding-bottom: 10px;
+}
+
+.section-box {
+    background-color: var(--background-color); 
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--accent-color-bg); /* Table Header BG is Deep Forest Green */
+    color: var(--accent-color-text); /* Table Header Text is White */
+    font-family: 'Poppins', sans-serif;
+}
+
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.wireframe-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--text-color);
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Center the images */
+}
+
+/* Responsive adjustments for wireframe image visibility */
+@media (min-width: 768px) {
+    .wireframe-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .wireframe-container div {
+        flex-basis: 45%; /* Control width in desktop view */
+    }
+}
